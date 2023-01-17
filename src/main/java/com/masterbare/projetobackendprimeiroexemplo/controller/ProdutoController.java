@@ -1,4 +1,4 @@
-package com.masterbare.primeiroexemplo.controller;
+package com.masterbare.projetobackendprimeiroexemplo.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.masterbare.primeiroexemplo.model.Produto;
-import com.masterbare.primeiroexemplo.services.ProdutoService;
+import com.masterbare.projetobackendprimeiroexemplo.model.Produto;
+import com.masterbare.projetobackendprimeiroexemplo.services.ProdutoService;
 
 @RestController
 @RequestMapping("/api/produtos")

@@ -1,11 +1,11 @@
-package com.masterbare.primeiroexemplo.services;
+package com.masterbare.projetobackendprimeiroexemplo.services;
 
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.masterbare.primeiroexemplo.model.Produto;
-import com.masterbare.primeiroexemplo.repository.ProdutoRepository;
+import com.masterbare.projetobackendprimeiroexemplo.model.Produto;
+import com.masterbare.projetobackendprimeiroexemplo.repository.ProdutoRepository;
 
 @Service
 public class ProdutoService {

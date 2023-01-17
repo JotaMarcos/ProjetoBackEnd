@@ -1,4 +1,4 @@
-package com.masterbare.primeiroexemplo;
+package com.masterbare.projetobackendprimeiroexemplo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

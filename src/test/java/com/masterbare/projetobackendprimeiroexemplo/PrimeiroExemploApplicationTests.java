@@ -1,4 +1,4 @@
-package com.masterbare.primeiroexemplo;
+package com.masterbare.projetobackendprimeiroexemplo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.masterbare.primeiroexemplo.model;
+package com.masterbare.projetobackendprimeiroexemplo.model;
 
 public class Produto {
     

@@ -1,12 +1,12 @@
-package com.masterbare.primeiroexemplo.repository;
+package com.masterbare.projetobackendprimeiroexemplo.repository;
 
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Repository;
-import com.masterbare.primeiroexemplo.model.Produto;
+import com.masterbare.projetobackendprimeiroexemplo.model.Produto;
+import com.masterbare.projetobackendprimeiroexemplo.model.exception.ResourceNotFoundException;
 
 @Repository
 public class ProdutoRepository {
@@ -68,7 +68,7 @@ public class ProdutoRepository {
         Optional<Produto> produtoEncontrado = obterPorId(produto.getId());
 
         if(produtoEncontrado.isEmpty()){
-            throw new InputMismatchException("Produto não encontrado");
+            throw new ResourceNotFoundException("Produto não pode ser atualizado pois não existe.");
         } 
 
         // Eu tenho que remover o produto antigo da lista
