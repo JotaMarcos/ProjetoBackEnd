@@ -19,7 +19,8 @@ public class ProdutoService {
      */
     public List<Produto> obterTodos() {
         // Colocar regra aqui caso tenha ...
-        return produtoRepository.obterTodos();
+        //return produtoRepository.obterTodos();
+        return produtoRepository.findAll();
     }
 
     /**
@@ -28,7 +29,8 @@ public class ProdutoService {
      * @return Retorna um produto caso seja encontrado.
      */
     public Optional<Produto> obterPorId(Long id) {
-        return produtoRepository.obterPorId(id);
+        //return produtoRepository.obterPorId(id);
+        return produtoRepository.findById(id);
     }
 
      /**
@@ -38,7 +40,8 @@ public class ProdutoService {
      */
     public Produto adicionar(Produto produto) {
         // Poderia ter alguma regra de negócio para validar o produto.
-        return produtoRepository.adicionar(produto);
+        //return produtoRepository.adicionar(produto);
+        return produtoRepository.save(produto);
     }
 
     /**
@@ -47,7 +50,8 @@ public class ProdutoService {
      */
     public void deletar(Long id) {
         // Aqui poderia ter alguma lógica de validação.
-        produtoRepository.deletar(id);
+        //produtoRepository.deletar(id);
+        produtoRepository.deleteById(id);
     }
 
     /**
@@ -61,7 +65,8 @@ public class ProdutoService {
         // Ter alguma validação no ID.
         produto.setId(id);
 
-        return produtoRepository.atualizar(produto);
+        //return produtoRepository.atualizar(produto);
+        return produtoRepository.saveAndFlush(produto);
     }
 
 }
